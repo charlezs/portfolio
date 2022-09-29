@@ -1,13 +1,3 @@
-// import AgoraCard from "../components/AgoraCard";
-
-// function AboutMe() {
-//   return (
-//     <AboutMe />
-//   )
-// }
-
-// export default AboutMe
-
 import React from 'react';
 import { Heading, Text, Container, Flex, SimpleGrid, Box, Highlight, Stack, Avatar} from '@chakra-ui/react';
 import { Link, useDisclosure, Button  } from '@chakra-ui/react'
