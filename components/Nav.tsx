@@ -54,8 +54,8 @@ export default function Nav() {
                     </Box>
 
                     <Box>
-                    <NextLink href='/github' passHref>
-                        <Link>Github</Link>
+                    <NextLink href='/projects' passHref>
+                        <Link>My Projects</Link>
                     </NextLink>
                     </Box>
 
