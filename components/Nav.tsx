@@ -17,7 +17,9 @@ import {
   Center,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-
+import NextLink from "next/link"
+import {BsFillHouseDoorFill} from 'react-icons/bs'
+import { Icon } from '@chakra-ui/react'
 const NavLink = ({ children }: { children: ReactNode }) => (
   <Link
     px={2}
@@ -39,7 +41,36 @@ export default function Nav() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Logo</Box>
+                <Box w='5%' pl={10} pt={1}>
+                    <NextLink href='/' passHref>
+                        <Link><Icon w={5} h={5} as={BsFillHouseDoorFill} /></Link>
+                    </NextLink>
+                    </Box>
+
+                    <Box>
+                    <NextLink href='/about' passHref>
+                        <Link>About Me</Link>
+                    </NextLink>
+                    </Box>
+
+                    <Box>
+                    <NextLink href='/github' passHref>
+                        <Link>Github</Link>
+                    </NextLink>
+                    </Box>
+
+                    <Box>
+                    <NextLink href='/writing' passHref>
+                        <Link>Writing</Link>
+                    </NextLink>
+                    </Box>
+
+                    <Box>
+                    <NextLink href='/contact' passHref>
+                        <Link>Contact Me</Link>
+                    </NextLink>
+                </Box>
+
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>

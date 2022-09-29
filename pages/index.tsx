@@ -1,76 +1,110 @@
 import {
-  Box,
-  Center,
-  useColorModeValue,
+  Container,
+  SimpleGrid,
+  Image,
+  Flex,
   Heading,
   Text,
   Stack,
-  Image,
+  StackDivider,
+  Icon,
+  useColorModeValue,
 } from '@chakra-ui/react';
+import {
+  BsFillBrightnessAltHighFill,
+  BsFillPlusCircleFill,
+  BsEye,
+} from 'react-icons/bs';
+import { ReactElement } from 'react';
+import TStack from '../components/TStack';
 
-const IMAGE =
-  'https://images.unsplash.com/photo-1518051870910-a46e30d9db16?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80';
+interface FeatureProps {
+  text: string;
+  iconBg: string;
+  icon?: ReactElement;
+}
 
-export default function ProductSimple() {
+const Feature = ({ text, icon, iconBg }: FeatureProps) => {
   return (
-    <Center py={12}>
-      <Box
-        role={'group'}
-        p={6}
-        maxW={'330px'}
-        w={'full'}
-        bg={useColorModeValue('white', 'gray.800')}
-        boxShadow={'2xl'}
-        rounded={'lg'}
-        pos={'relative'}
-        zIndex={1}>
-        <Box
-          rounded={'lg'}
-          mt={-12}
-          pos={'relative'}
-          height={'230px'}
-          _after={{
-            transition: 'all .3s ease',
-            content: '""',
-            w: 'full',
-            h: 'full',
-            pos: 'absolute',
-            top: 5,
-            left: 0,
-            backgroundImage: `url(${IMAGE})`,
-            filter: 'blur(15px)',
-            zIndex: -1,
-          }}
-          _groupHover={{
-            _after: {
-              filter: 'blur(20px)',
-            },
-          }}>
-          <Image
-            rounded={'lg'}
-            height={230}
-            width={282}
-            objectFit={'cover'}
-            src={IMAGE}
-          />
-        </Box>
-        <Stack pt={10} align={'center'}>
-          <Text color={'gray.500'} fontSize={'sm'} textTransform={'uppercase'}>
-            Brand
+    <Stack direction={'row'} align={'center'}>
+      <Flex
+        w={8}
+        h={8}
+        align={'center'}
+        justify={'center'}
+        rounded={'full'}
+        bg={iconBg}>
+        {icon}
+      </Flex>
+      <Text fontWeight={600}>{text}</Text>
+    </Stack>
+  );
+};
+
+export default function SplitWithImage() {
+  return (
+    <Container maxW={'5xl'} py={12}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+        <Stack spacing={4}>
+          <Text
+            textTransform={'uppercase'}
+            color={'blue.400'}
+            fontWeight={600}
+            fontSize={'sm'}
+            bg={useColorModeValue('blue.50', 'blue.900')}
+            p={2}
+            alignSelf={'flex-start'}
+            rounded={'md'}>
+            Welcome to my Site!
           </Text>
-          <Heading fontSize={'2xl'} fontFamily={'body'} fontWeight={500}>
-            Nice Chair, pink
-          </Heading>
-          <Stack direction={'row'} align={'center'}>
-            <Text fontWeight={800} fontSize={'xl'}>
-              $57
-            </Text>
-            <Text textDecoration={'line-through'} color={'gray.600'}>
-              $199
-            </Text>
+          <Heading>I'm Charles Nyabeze  III</Heading>
+          <Text color={'gray.500'} fontSize={'lg'}>
+          Full stack web developer, VC, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills.            </Text>
+          <Stack
+            spacing={6}
+            divider={
+              <StackDivider
+                borderColor={useColorModeValue('gray.100', 'gray.700')}
+              />
+            }>
+            <Feature
+              icon={
+                <Icon as={BsFillBrightnessAltHighFill} color={'white'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('purple.300', 'purple.500')}
+              text={'Exited My First Startup in One Year'}
+            />
+            <Feature
+              icon={<Icon as={BsFillPlusCircleFill} color={'white'} w={5} h={5} />}
+              iconBg={useColorModeValue('green.300', 'green.500')}
+              text={'Made %12,000 returns in crypto'}
+            />
+            <Feature
+              icon={
+                <Icon as={BsEye} color={'white'} w={5} h={5} />
+              }
+              iconBg={useColorModeValue('blue.300', 'blue.500')}
+              text={'Founder of Inner Circle'}
+            />
           </Stack>
         </Stack>
-      </Box>
-    </Center>
+        <Flex>
+          <Image
+            rounded={'md'}
+            alt={'feature image'}
+            src={
+              'https://cdn.discordapp.com/attachments/985521628500877322/1024485843689279538/305DC2AD-FB2B-4E92-8984-4E1B8D23E39F_2.JPG'
+            }
+            objectFit={'cover'}
+          />
+
+        </Flex>
+      </SimpleGrid>
+      <TStack />
+      
+    </Container>
+
+    
   );
 }
+

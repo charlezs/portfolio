@@ -1,52 +1,55 @@
-import {
-    Box,
-    chakra,
-    SimpleGrid,
-    Stat,
-    StatLabel,
-    StatNumber,
-    useColorModeValue,
-  } from '@chakra-ui/react';
-  
-  interface StatsCardProps {
-    title: string;
-    stat: string;
-  }
-  function StatsCard(props: StatsCardProps) {
-    const { title, stat } = props;
-    return (
-      <Stat
-        px={{ base: 4, md: 8 }}
-        py={'5'}
-        shadow={'xl'}
-        border={'1px solid'}
-        borderColor={useColorModeValue('gray.800', 'gray.500')}
-        rounded={'lg'}>
-        <StatLabel fontWeight={'medium'}>
-          {title}
-        </StatLabel>
-        <StatNumber fontSize={'2xl'} fontWeight={'medium'}>
-          {stat}
-        </StatNumber>
-      </Stat>
-    );
-  }
-  
-  export default function BasicStatistics() {
-    return (
-      <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
-        <chakra.h1
-          textAlign={'center'}
-          fontSize={'4xl'}
-          py={10}
-          fontWeight={'bold'}>
-          What is our company doing?
-        </chakra.h1>
-        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
-          <StatsCard title={'We serve'} stat={'50,000 people'} />
-          <StatsCard title={'In'} stat={'30 different countries'} />
-          <StatsCard title={'Who speak'} stat={'100 different languages'} />
+import React from 'react';
+import { Heading, Text, Container, Flex, SimpleGrid, Box, Highlight} from '@chakra-ui/react';
+import { Link } from '@chakra-ui/react'
+export default function About() {
+  return (
+    <Container maxW={'5xl'} py={12} centerContent>
+      <SimpleGrid columns={1} spacing={10}>
+                <Box>
+                  <Heading> 
+                  <Highlight
+                    query='About Me'
+                    styles={{ px: '2', py: '1', rounded: 'full', bg: 'red.100' }}
+                  >
+                    About Me
+                    </Highlight>
+                    </Heading>
+                  <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
+                  I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
+                  </Text>
+                  <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
+                  As full-time mobile developer , I am lucky enough to receive a MacBook from my company, hence my journey continue with React Native, cross-platform mobile framework (Android & iOS). My passion in mobile development never ended and I am ready to take on new challenges! 🔥                  </Text>
+                </Box>
+
+                <Box>
+                  <Heading> My Career</Heading>
+                  <Link href='https://chakra-ui.com' isExternal style={{ textDecoration: 'none' }}>
+                  <Box
+                      as="article"
+                      w="100%"
+                      p={4}
+                      borderColor={"gray.300"}
+                      borderRadius={5}
+                      borderWidth="1px"
+                      transition=".5s"
+                      cursor="pointer"
+                      display="flex"
+                      role="group"
+                      _hover={{
+                          borderColor: "blue.500",
+                      }}
+                  >        
+                    <Text color={'gray.500'} fontSize={'lg'}>hi ihiisdhsiahda diahsdasdnasidna fhkfbdkbfdjbfsdfs idjaisdhn sdhsjdbs dshsj dishdaidhjn jsb daihdsibib</Text>
+                  </Box>
+                  </Link>
+                </Box>
+
+                <Box>
+                  <Heading> My Education</Heading>
+                  <Text color={'gray.500'} fontSize={'lg'}>hi ihiisdhsiahda diahsdasdnasidna fhkfbdkbfdjbfsdfs idjaisdhn sdhsjdbs dshsj dishdaidhjn jsb daihdsibib</Text>
+                </Box>
+
         </SimpleGrid>
-      </Box>
-    );
-  }
+      </Container>
+  );
+}
