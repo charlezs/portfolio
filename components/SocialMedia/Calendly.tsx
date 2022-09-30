@@ -10,7 +10,7 @@ import {
   } from '@chakra-ui/react';
   
   
-  export default function Twitter() {
+  export default function Calendly() {
     return (
   
   
@@ -27,61 +27,23 @@ import {
                   borderColor='red.200'
                   >
                           <Avatar
-                              size={'xl'}
+                              size={'lg'}
                               src={
-                              'https://cdn.discordapp.com/guilds/938711734221426739/users/326438296077074442/avatars/61614f4d781dfe9d26891e21a8fef65c.png?size=4096'
+                              'https://cdn.discordapp.com/attachments/985521628500877322/1025254585780146197/unknown.png'
                               }
                               mb={4}
-                              pos={'relative'}
-                              _after={{
-                              content: '""',
-                              w: 4,
-                              h: 4,
-                              bg: 'green.300',
-                              border: '2px solid white',
-                              rounded: 'full',
-                              pos: 'absolute',
-                              bottom: 0,
-                              right: 3,
-                              }}
                           />
                           <Heading fontSize={'2xl'} fontFamily={'body'}>
-                              Twitter
+                              Calendly
                           </Heading>
-                          <Text fontWeight={600} color={'gray.500'} mb={4}>
-                              @learn_charles
-                          </Text>
                           <Text
                               textAlign={'center'}
                               color={useColorModeValue('gray.700', 'gray.400')}
                               px={3}>
-                              DM me on Twitter to connect 
+                              Let's e-meet sometime! 
                           </Text>
-  
-                          <Text
-                              textAlign={'center'}
-                              color={useColorModeValue('gray.700', 'gray.400')}
-                              px={3}>
-                              OR 
-                          </Text>
-  
-                          <Text
-                              textAlign={'center'}
-                              color={useColorModeValue('gray.700', 'gray.400')}
-                              px={3}>
-                              follow to see dope content! 
-                          </Text>
-  
+      
                           <Stack mt={8} direction={'row'} spacing={4}>
-                              <Button
-                              flex={1}
-                              fontSize={'sm'}
-                              rounded={'full'}
-                              _focus={{
-                                  bg: 'gray.200',
-                              }}>
-                              Message
-                              </Button>
                               <Button
                               flex={1}
                               fontSize={'sm'}
@@ -97,7 +59,7 @@ import {
                               _focus={{
                                   bg: 'blue.500',
                               }}>
-                              Follow
+                              Book Time
                               </Button>
                           </Stack>
                   </Box>

@@ -30,7 +30,7 @@ export default function Twitter() {
                         <Avatar
                             size={'xl'}
                             src={
-                            'https://cdn.discordapp.com/guilds/938711734221426739/users/326438296077074442/avatars/61614f4d781dfe9d26891e21a8fef65c.png?size=4096'
+                            'https://cdn.discordapp.com/attachments/985521628500877322/1025255226384601199/unknown.png'
                             }
                             mb={4}
                             pos={'relative'}
@@ -56,7 +56,7 @@ export default function Twitter() {
                             textAlign={'center'}
                             color={useColorModeValue('gray.700', 'gray.400')}
                             px={3}>
-                            DM me on Twitter to connect 
+                            DM me! 
                         </Text>
 
                         <Text
