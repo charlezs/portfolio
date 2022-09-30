@@ -8,6 +8,7 @@ import {
   Avatar,
   Center,
   Button,
+  Link
 } from '@chakra-ui/react';
 
 
@@ -72,19 +73,11 @@ export default function Twitter() {
                             px={3}>
                             follow to see dope content! 
                         </Text>
-
-                        <Stack mt={8} direction={'row'} spacing={4}>
+                        <Link href={'https://twitter.com/intent/user?screen_name=learn_charles'} isExternal>
                             <Button
+                            w={'100%'}
                             flex={1}
-                            fontSize={'sm'}
-                            rounded={'full'}
-                            _focus={{
-                                bg: 'gray.200',
-                            }}>
-                            Message
-                            </Button>
-                            <Button
-                            flex={1}
+                            mt={7}
                             fontSize={'sm'}
                             rounded={'full'}
                             bg={'blue.400'}
@@ -98,9 +91,10 @@ export default function Twitter() {
                             _focus={{
                                 bg: 'blue.500',
                             }}>
-                            Follow
+                            Follow 
                             </Button>
-                        </Stack>
+                        </Link>
+
                 </Box>
         </Center>
   )

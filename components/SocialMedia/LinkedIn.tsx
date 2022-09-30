@@ -7,6 +7,7 @@ import {
     Avatar,
     Center,
     Button,
+    Link,
   } from '@chakra-ui/react';
   
   
@@ -43,14 +44,14 @@ import {
                               px={3}>
                               Let's network and connect :)
                           </Text>
-
-                          <Stack mt={8} direction={'row'} spacing={4}>
+                            <Link href='https://www.linkedin.com/in/charles-nyabeze/' isExternal>
                               <Button
                               flex={1}
                               fontSize={'sm'}
                               rounded={'full'}
                               bg={'blue.400'}
                               color={'white'}
+                              mt={7}
                               boxShadow={
                                   '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
                               }
@@ -62,7 +63,7 @@ import {
                               }}>
                               Connect
                               </Button>
-                          </Stack>
+                            </Link>
                   </Box>
           </Center>
     )

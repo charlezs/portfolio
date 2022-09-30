@@ -7,6 +7,7 @@ import {
     Avatar,
     Center,
     Button,
+    Link,
   } from '@chakra-ui/react';
   
   
@@ -43,13 +44,14 @@ import {
                               Let's e-meet sometime! 
                           </Text>
       
-                          <Stack mt={8} direction={'row'} spacing={4}>
+                            <Link href='https://calendly.com/charles1x/meet-charles?month=2022-09' isExternal>
                               <Button
                               flex={1}
                               fontSize={'sm'}
                               rounded={'full'}
                               bg={'blue.400'}
                               color={'white'}
+                              mt={7}
                               boxShadow={
                                   '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
                               }
@@ -61,7 +63,8 @@ import {
                               }}>
                               Book Time
                               </Button>
-                          </Stack>
+                            </Link>
+
                   </Box>
           </Center>
     )

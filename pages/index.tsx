@@ -72,12 +72,12 @@ export default function SplitWithImage() {
                 <Icon as={BsFillBrightnessAltHighFill} color={'white'} w={5} h={5} />
               }
               iconBg={useColorModeValue('purple.300', 'purple.500')}
-              text={'Exited My First Startup in One Year'}
+              text={'Founder of Agora (acquired by [REDACTED])'}
             />
             <Feature
               icon={<Icon as={BsFillPlusCircleFill} color={'white'} w={5} h={5} />}
               iconBg={useColorModeValue('green.300', 'green.500')}
-              text={'Made %12,000 returns in crypto'}
+              text={'Made 12,000% returns in crypto'}
             />
             <Feature
               icon={

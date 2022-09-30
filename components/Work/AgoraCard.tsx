@@ -63,7 +63,7 @@ export default function AgCard() {
               <Box pt={3}>
               <Button {...buttonProps}
                   width='100%'
-                  h={7}
+                  h={10}
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
