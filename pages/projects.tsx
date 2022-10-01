@@ -1,13 +1,17 @@
 import React from 'react';
-import { Heading, Text, Container, SimpleGrid, Box, Flex, Stack, Divider} from '@chakra-ui/react';
+import { Heading, Text, Container, SimpleGrid, Box, Flex, Stack, Divider, useColorModeValue, Center, Image, Avatar} from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
+import AL from '../components/Projects/labs';
+import Zone from '../components/Projects/zone';
+import Cheer from '../components/Projects/Cheer';
+import InnerCircle from '../components/Projects/Circle';
 
 export default function projects() {
     return (
       <Container maxW={'5xl'} py={12} centerContent>
         <SimpleGrid columns={1} spacing={10}>
-                  <Box>
-                  <Flex>
+            <Box>
+                <Flex>
                 <Stack pr={3}>
                       <StarIcon w={9} h={9}/>
                 </Stack>
@@ -18,10 +22,12 @@ export default function projects() {
                     </Text>
                   </Box>
                   <Divider />
-  
-                  <Box>
-                    {/* This is where your cards will go */}
-                  </Box>
+                  <SimpleGrid columns={[2]} spacing='40px'>
+                    <AL />
+                    <Cheer />
+                    <InnerCircle />
+                    <Zone />
+                  </SimpleGrid>
           </SimpleGrid>
         </Container>
     );

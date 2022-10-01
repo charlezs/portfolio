@@ -13,7 +13,7 @@ export default function VtCard() {
         w="100%"
         p={4}
         mb={12}
-        borderColor={"white"}
+        borderColor={"black"}
         borderRadius={5}
         borderWidth="1px"
         transition=".5s"
@@ -21,12 +21,12 @@ export default function VtCard() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "grey",
+            borderColor: "black.100",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
           <Avatar
-            src={'https://pbs.twimg.com/profile_images/1546662871160979458/DIZpFR5S_400x400.jpg'}
+            src={'https://media-exp1.licdn.com/dms/image/C560BAQHCoRj_BiJVAQ/company-logo_100_100/0/1564015433090?e=1672876800&v=beta&t=y9P0zexs4YYLvtIXllejRo3ljcYXmLu9FyM4exj61Uk'}
             size='2xl'
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
@@ -34,23 +34,23 @@ export default function VtCard() {
             <Heading 
             fontWeight={600} 
             
-            bgGradient='linear(to-r, #FBF2FF, #DC86FA)'
+            bgGradient='linear(to-l, #F4F5F6, #8C8C8C)'
             bgClip='text'
             >
-              Agora Labs
+              RippleX Fellowship
               </Heading>
             </Link>
             <Text
               as='em'               
               fontSize='lg'>
-              Founder / CMO
+              Fellowship
             </Text>
             <Text
             textTransform={'uppercase'}
-            color={'blue.400'}
+            color={'white'}
             fontWeight={200}
             fontSize={'xs'}
-            bg={useColorModeValue('blue.50', 'blue.900')}
+            bg={useColorModeValue('grey', 'black')}
             p={1}
             alignSelf={'flex-start'}
             rounded={'md'}>
@@ -63,16 +63,16 @@ export default function VtCard() {
               <Box pt={3}>
               <Button {...buttonProps}
                   width='100%'
-                  h={7}
+                  h={10}
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
-                  bgGradient='linear(to-l, #C030ED, #DC86FA)'
+                  bgGradient='linear(to-r, #A0A3A3, #878787)'
                   _hover={{
-                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                    bgGradient:'linear(to-r, #FFFFFF, #878787)',
                   }}
                   _expanded={{
-                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                    bgGradient:'linear(to-r, #FFFFFF, #878787)',
                   }}
               >
                 <Text color='black'>

@@ -13,7 +13,7 @@ export default function AgCard() {
         w="100%"
         p={4}
         mb={12}
-        borderColor={"white"}
+        borderColor={"black"}
         borderRadius={5}
         borderWidth="1px"
         transition=".5s"
@@ -21,7 +21,7 @@ export default function AgCard() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "grey",
+            borderColor: "purple.200",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
@@ -34,7 +34,7 @@ export default function AgCard() {
             <Heading 
             fontWeight={600} 
             
-            bgGradient='linear(to-r, #FBF2FF, #DC86FA)'
+            bgGradient='linear(to-l, #FBF2FF, #DC86FA)'
             bgClip='text'
             >
               Agora Labs

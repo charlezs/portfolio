@@ -13,7 +13,7 @@ export default function FnCard() {
         w="100%"
         p={4}
         mb={12}
-        borderColor={"white"}
+        borderColor={"black"}
         borderRadius={5}
         borderWidth="1px"
         transition=".5s"
@@ -21,12 +21,12 @@ export default function FnCard() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "grey",
+            borderColor: "blue.100",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
           <Avatar
-            src={'https://pbs.twimg.com/profile_images/1546662871160979458/DIZpFR5S_400x400.jpg'}
+            src={'https://cdn.discordapp.com/attachments/985521628500877322/1025567731958960239/Untitled_design_1.png'}
             size='2xl'
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
@@ -34,16 +34,16 @@ export default function FnCard() {
             <Heading 
             fontWeight={600} 
             
-            bgGradient='linear(to-r, #FBF2FF, #DC86FA)'
+            bgGradient='linear(to-l, #FFFFFF, #88D1F1)'
             bgClip='text'
             >
-              Agora Labs
+              Future North
               </Heading>
             </Link>
             <Text
               as='em'               
               fontSize='lg'>
-              Founder / CMO
+              Business Administrative 
             </Text>
             <Text
             textTransform={'uppercase'}
@@ -63,16 +63,16 @@ export default function FnCard() {
               <Box pt={3}>
               <Button {...buttonProps}
                   width='100%'
-                  h={7}
+                  h={10}                  
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
-                  bgGradient='linear(to-l, #C030ED, #DC86FA)'
+                  bgGradient='linear(to-l, #88D1F1, #FFFFFF)'
                   _hover={{
-                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                    bgGradient:'linear(to-r, #FBF2FF, #88D1F1)',
                   }}
                   _expanded={{
-                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                    bgGradient:'linear(to-r, #FBF2FF, #88D1F1)',
                   }}
               >
                 <Text color='black'>
@@ -88,5 +88,6 @@ export default function FnCard() {
 
           </Stack>
         </Stack>                  
-      </Box>      );
+      </Box>      
+    );
 }

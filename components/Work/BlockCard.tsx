@@ -13,7 +13,7 @@ export default function BpCard() {
         w="100%"
         p={4}
         mb={12}
-        borderColor={"white"}
+        borderColor={"black"}
         borderRadius={5}
         borderWidth="1px"
         transition=".5s"
@@ -21,12 +21,12 @@ export default function BpCard() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "grey",
+            borderColor: "blue",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
           <Avatar
-            src={'https://pbs.twimg.com/profile_images/1546662871160979458/DIZpFR5S_400x400.jpg'}
+            src={'https://media-exp1.licdn.com/dms/image/C4D0BAQFUStX3pSR7-Q/company-logo_100_100/0/1630506759883?e=1672876800&v=beta&t=5dYhZOuiEW3p1THlhJvujZY0Ul5e4iKgtsDHO5Xesf8'}
             size='2xl'
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
@@ -34,16 +34,16 @@ export default function BpCard() {
             <Heading 
             fontWeight={600} 
             
-            bgGradient='linear(to-r, #FBF2FF, #DC86FA)'
+            bgGradient='linear(to-l, #FBF2FF, #0031FF)'
             bgClip='text'
             >
-              Agora Labs
+              Blockperks
               </Heading>
             </Link>
             <Text
               as='em'               
               fontSize='lg'>
-              Founder / CMO
+              Community Lead
             </Text>
             <Text
             textTransform={'uppercase'}
@@ -63,16 +63,16 @@ export default function BpCard() {
               <Box pt={3}>
               <Button {...buttonProps}
                   width='100%'
-                  h={7}
+                  h={10}
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
-                  bgGradient='linear(to-l, #C030ED, #DC86FA)'
+                  bgGradient='linear(to-r, #88D1F1, #0031FF)'
                   _hover={{
-                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                    bgGradient:'linear(to-r, #FBF2FF, #0031FF)',
                   }}
                   _expanded={{
-                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                    bgGradient:'linear(to-r, #FBF2FF, #0031FF)',
                   }}
               >
                 <Text color='black'>

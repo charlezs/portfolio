@@ -4,6 +4,7 @@ import AgCard from '../components/Work/AgoraCard';
 import VtCard from '../components/Work/VentureCard';
 import BpCard from '../components/Work/BlockCard';
 import FnCard from '../components/Work/FutureCard';
+import CarlCard from '../components/Education/CarlCard';
 import { StarIcon } from '@chakra-ui/icons';
 import Head from 'next/head';
 
@@ -44,8 +45,9 @@ export default function AgoraCard() {
                 </Box>
 
                 <Box>
-                  <Heading> My Education</Heading>
-                  <Text color={'gray.500'} fontSize={'lg'}>hi ihiisdhsiahda diahsdasdnasidna fhkfbdkbfdjbfsdfs idjaisdhn sdhsjdbs dshsj dishdaidhjn jsb daihdsibib</Text>
+                  <Heading mb={5}> My Education</Heading>
+                  {/* This is where your cards will go */}
+                    <CarlCard/>
                 </Box>
 
         </SimpleGrid>
