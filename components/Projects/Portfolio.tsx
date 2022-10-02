@@ -38,20 +38,20 @@ export default function AL() {
       color={useColorModeValue('gray.700', 'white')}
       fontSize={'2xl'}
       fontFamily={'body'}>
-      Game Zone
+      My Site
     </Heading>
     <Text
             textTransform={'uppercase'}
             justifyContent={'right'}
             alignItems={'end'}
             alignSelf={'flex-end'}
-            color={'grey.200'}
+            color={useColorModeValue('white', 'black')}
             fontWeight={600}
             fontSize={'sm'}
-            bg={useColorModeValue('black.50', 'black')}
+            bg={useColorModeValue('black', 'white')}
             p={2}
             rounded={'md'}>
-            Reddit Clone
+            Portfolio
             </Text>
     </SimpleGrid>
   </Stack>
@@ -62,15 +62,15 @@ export default function AL() {
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
-                  bg={'black'}
+                  bg={'white'}
                   _hover={{
-                    bgGradient:'linear(to-r, white, black)',
+                    bgGradient:'linear(to-r, black, white)',
                   }}
                   _expanded={{
-                    bgGradient:'linear(to-r, grey, black)',
+                    bgGradient:'linear(to-r, black, white)',
                   }}
               >
-                <Text color='white'>
+                <Text color='black'>
                 What Is It?<ChevronDownIcon />
                 </Text>
               </Button>

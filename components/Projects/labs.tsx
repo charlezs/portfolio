@@ -1,6 +1,11 @@
-import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Avatar, SimpleGrid} from '@chakra-ui/react';
+import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure} from '@chakra-ui/react';
+import { ChevronDownIcon } from '@chakra-ui/icons';
 
 export default function AL() {
+  const { getDisclosureProps, getButtonProps } = useDisclosure()
+  const buttonProps = getButtonProps()
+  const disclosureProps = getDisclosureProps()
+
   return (
 
 <Center py={6}>
@@ -28,43 +33,51 @@ export default function AL() {
     />
   </Box>
   <Stack>
-  <SimpleGrid columns={[2]} spacing='40px'>
+  <SimpleGrid columns={2} spacing={55}>
   <Heading
       color={useColorModeValue('gray.700', 'white')}
       fontSize={'2xl'}
       fontFamily={'body'}>
       Agora Labs
     </Heading>
-  <Text
+    <Text
             textTransform={'uppercase'}
-            color={'blue.400'}
+            justifyContent={'right'}
+            alignItems={'end'}
+            alignSelf={'flex-end'}
+            color={'purple.200'}
             fontWeight={600}
             fontSize={'sm'}
-            bg={useColorModeValue('blue.50', 'blue.900')}
+            bg={useColorModeValue('purple.50', 'purple.900')}
             p={2}
-            alignItems={'center'}
             rounded={'md'}>
-            Startup
-          </Text>
+            My Startup 🔮
+            </Text>
     </SimpleGrid>
-
-
-    <Text color={'gray.500'}>
-      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-      erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-      et ea rebum.
-    </Text>
   </Stack>
-  <Stack mt={6} direction={'row'} spacing={4} align={'center'}>
-    <Avatar
-      src={'https://avatars0.githubusercontent.com/u/1164541?v=4'}
-    />
-    <Stack direction={'column'} spacing={0} fontSize={'sm'}>
-      <Text fontWeight={600}>Achim Rolle</Text>
-      <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
-    </Stack>
-  </Stack>
+  <Box pt={3}>
+              <Button {...buttonProps}
+                  width='100%'
+                  h={10}
+                  transition='all 0.2s'
+                  borderRadius='md'
+                  borderWidth='1px'
+                  bg={'purple.200'}
+                  _hover={{
+                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                  }}
+                  _expanded={{
+                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                  }}
+              >
+                <Text color='black'>
+                What Is It?<ChevronDownIcon />
+                </Text>
+              </Button>
+              <Text {...disclosureProps} mt={4}>
+              I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
+              </Text>
+              </Box>
 </Box>
 </Center>
 

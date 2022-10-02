@@ -5,6 +5,7 @@ import AL from '../components/Projects/labs';
 import Zone from '../components/Projects/zone';
 import Cheer from '../components/Projects/Cheer';
 import InnerCircle from '../components/Projects/Circle';
+import Folio from '../components/Projects/Portfolio';
 
 export default function projects() {
     return (
@@ -22,9 +23,10 @@ export default function projects() {
                     </Text>
                   </Box>
                   <Divider />
-                  <SimpleGrid columns={[2]} spacing='40px'>
+                  <SimpleGrid columns={[1]}>
                     <AL />
                     <Cheer />
+                    <Folio />
                     <InnerCircle />
                     <Zone />
                   </SimpleGrid>
