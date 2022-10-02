@@ -16,7 +16,7 @@ export default function Bear() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "green.200",
+            borderColor: "yellow.800",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
@@ -25,10 +25,10 @@ export default function Bear() {
             <Heading 
             fontWeight={600} 
             mb={'3'}
-            bgGradient='linear(to-l, #FBF2FF, green.300)'
+            bgGradient='linear(to-l, #FBF2FF, yellow.800)'
             bgClip='text'
             >
-              Trading NFTs feat. PARSEC
+              How to: Bear Market
               </Heading>
             </Link>
             <Text
@@ -36,14 +36,14 @@ export default function Bear() {
             color={useColorModeValue('black', 'white')}
             fontWeight={200}
             fontSize={'xs'}
-            bg={useColorModeValue('green.50', 'green.900')}
+            bg={useColorModeValue('yellow.800', 'yellow.900')}
             p={1}
             alignSelf={'flex-start'}
             rounded={'md'}>
-              Trading Insights
+              Survival
             </Text>
             <Text color={useColorModeValue('black', 'white')} pt={3} fontSize={20}>
-            Should I buy? Do I sell? I feel like holding but should I? What should I do!?            
+            A thread on how to make it through a bear market on top. TLDR: Increase your assets and decrease exposure.             
             </Text>
           </Stack>
         </Stack>                  

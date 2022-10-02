@@ -36,6 +36,7 @@ export default function writing() {
           <Divider />
           <Box>
           <Heading mb={'5'}> Articles 📕</Heading>
+          
           <ArtOne />
           <Risky />
           <HereW />

@@ -16,7 +16,7 @@ export default function Mastery() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "green.200",
+            borderColor: "yellow.200",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
@@ -25,25 +25,25 @@ export default function Mastery() {
             <Heading 
             fontWeight={600} 
             mb={'3'}
-            bgGradient='linear(to-l, #FBF2FF, green.300)'
+            bgGradient='linear(to-l, yellow.200, yellow.300)'
             bgClip='text'
             >
-              Trading NFTs feat. PARSEC
+              Cracking the Mastery Code
               </Heading>
             </Link>
             <Text
             textTransform={'uppercase'}
-            color={useColorModeValue('black', 'white')}
+            color={useColorModeValue('black', 'black')}
             fontWeight={200}
             fontSize={'xs'}
-            bg={useColorModeValue('green.50', 'green.900')}
+            bg={useColorModeValue('yellow.50', 'yellow.200')}
             p={1}
             alignSelf={'flex-start'}
             rounded={'md'}>
-              Trading Insights
+              Learning
             </Text>
             <Text color={useColorModeValue('black', 'white')} pt={3} fontSize={20}>
-            Should I buy? Do I sell? I feel like holding but should I? What should I do!?            
+            Mastery, how do we really achieve it? A thread on cracking the mastery code.            
             </Text>
           </Stack>
         </Stack>                  
