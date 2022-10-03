@@ -29,7 +29,7 @@ import {
 
                   >
                           <Avatar
-                              size={'lg'}
+                              size={'xl'}
                               src={
                               'https://cdn.discordapp.com/attachments/985521628500877322/1025255030330249246/unknown.png'
                               }

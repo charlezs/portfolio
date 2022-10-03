@@ -50,22 +50,6 @@ export default function Twitter() {
                         <Heading fontSize={'2xl'} fontFamily={'body'}>
                             Twitter
                         </Heading>
-                        <Text fontWeight={600} color={'gray.500'} mb={4}>
-                            @learn_charles
-                        </Text>
-                        <Text
-                            textAlign={'center'}
-                            color={useColorModeValue('gray.700', 'gray.400')}
-                            px={3}>
-                            DM me! 
-                        </Text>
-
-                        <Text
-                            textAlign={'center'}
-                            color={useColorModeValue('gray.700', 'gray.400')}
-                            px={3}>
-                            OR 
-                        </Text>
 
                         <Text
                             textAlign={'center'}

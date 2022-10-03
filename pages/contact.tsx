@@ -17,7 +17,7 @@ import {
   SimpleGrid
 } from '@chakra-ui/react';
 
-export default function ThreeTierPricing() {
+export default function ThreeTier() {
   return (
     <Box py={12} mb={4}>
       <VStack spacing={2} textAlign="center">
@@ -34,7 +34,7 @@ export default function ThreeTierPricing() {
         justify="center"
         spacing={{ base: 4, lg: 10 }}
         py={10}>
-    <SimpleGrid columns={[2, null, 3]} spacing='40px'>
+    <SimpleGrid columns={[2, null, 3]} spacing='40px' p={10} mb={5}>
         <Calendly/>
         <Twitter />
         <LinkedIn/>

@@ -28,7 +28,7 @@ import {
                   borderColor='red.200'
                   >
                           <Avatar
-                              size={'lg'}
+                              size={'xl'}
                               src={
                               'https://cdn.discordapp.com/attachments/985521628500877322/1025254585780146197/unknown.png'
                               }
