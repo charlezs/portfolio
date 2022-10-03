@@ -33,7 +33,6 @@ export default function CarlCard() {
           <Link href='https://www.agoralabs.xyz/' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
-            
             bgGradient='linear(to-l, #FBF2FF, #E30004)'
             bgClip='text'
             >

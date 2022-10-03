@@ -1,12 +1,12 @@
 import React from 'react';
 import { Heading, Text, Container, SimpleGrid, Box, Flex, Stack, Divider, useColorModeValue, Center, Image, Avatar} from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
-import AL from '../components/Projects/labs';
-import Zone from '../components/Projects/zone';
+import AL from '../components/Projects/Labs';
+import Zone from '../components/Projects/Zone';
 import Cheer from '../components/Projects/Cheer';
 import InnerCircle from '../components/Projects/Circle';
 import Folio from '../components/Projects/Portfolio';
-
+``
 export default function projects() {
     return (
       <Container maxW={'5xl'} py={12} centerContent>

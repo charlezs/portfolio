@@ -1,6 +1,6 @@
 import {
   Box,
-  chakra,
+  Heading,
   SimpleGrid,
   Stat,
   StatLabel,
@@ -29,25 +29,36 @@ function StatsCard(props: StatsCardProps) {
         {stat}
       </StatNumber>
     </Stat>
+
+    
   );
 }
 
 export default function BasicStatistics() {
   return (
     <Box maxW="7xl" mx={'auto'} pt={5} px={{ base: 2, sm: 12, md: 17 }}>
-      <chakra.h1
+      <Heading
         textAlign={'center'}
         fontSize={'4xl'}
         py={10}
-        fontWeight={'bold'}>
-        My favorite languages are:
-      </chakra.h1>
+        fontWeight={'bold'}
+        bgClip={'text'}
+        bgGradient={[
+          'linear(to-t, whiteAlpha.700, blue.400)',
+        ]}        >
+        My Favorite Languages Are:
+      </Heading>
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
-        <StatsCard title={'Styling'} stat={'ChakraUi'} />
-        <StatsCard title={'Overall'} stat={'TypeScript'} />
-        <StatsCard title={'Database'} stat={'MongoDB'} />
+        <StatsCard title={'Styling'} stat={'ChakraUI'} />
         <StatsCard title={'ORM'} stat={'Prisma'} />
+        <StatsCard title={'Database'} stat={'MongoDB'} />
+        <StatsCard title={'Weapon of Choice'} stat={'TypeScript'} />
+        <StatsCard title={'Framework'} stat={'Next.Js'} />
+        <StatsCard title={'Functionality'} stat={'JQuery'} />
+        <StatsCard title={'UI'} stat={'React'} />
+        <StatsCard title={'Management'} stat={'MySQL'} />
       </SimpleGrid>
     </Box>
+
   );
 }
