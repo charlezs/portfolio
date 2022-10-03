@@ -1,77 +1,87 @@
 import { ReactNode } from 'react';
 import {
   Box,
+  Icon,
   Flex,
+  HStack,
   Link,
+  IconButton,
   Button,
+  useDisclosure,
   useColorModeValue,
   Stack,
   useColorMode,
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import NextLink from "next/link"
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import {BsFillHouseDoorFill} from 'react-icons/bs'
-import { Icon } from '@chakra-ui/react'
-const NavLink = ({ children }: { children: ReactNode }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={'#'}>
-    {children}
-  </Link>
-);
 
-export default function Nav() {
+export default function Simple() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+
   return (
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-                <Box w='5%' pl={10} pt={1}>
+          <IconButton
+            size={'md'}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={'Open Menu'}
+            display={{ md: 'none' }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+          <HStack pl={6} spacing={100} alignItems={'center'}>
+            <HStack
+              as={'nav'}
+              spacing={60}
+              display={{ base: 'none', md: 'flex' }}>
                     <NextLink href='/' passHref>
-                        <Link><Icon w={5} h={5} as={BsFillHouseDoorFill} /></Link>
+                    <Link><Icon w={5} h={5} as={BsFillHouseDoorFill} /></Link>
                     </NextLink>
-                    </Box>
-
-                    <Box>
                     <NextLink href='/about' passHref>
                         <Link>About Me</Link>
                     </NextLink>
-                    </Box>
-
-                    <Box>
                     <NextLink href='/projects' passHref>
                         <Link>My Projects</Link>
                     </NextLink>
-                    </Box>
-
-                    <Box>
                     <NextLink href='/writing' passHref>
                         <Link>Writing</Link>
                     </NextLink>
-                    </Box>
-
-                    <Box>
                     <NextLink href='/contact' passHref>
                         <Link>Contact Me</Link>
                     </NextLink>
-                </Box>
-
-
+            </HStack>
+          </HStack>
           <Flex alignItems={'center'}>
-            <Stack direction={'row'} spacing={7}>
-              <Button onClick={toggleColorMode}>
+          <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
               </Button>
-
-            </Stack>
           </Flex>
         </Flex>
+
+        {isOpen ? (
+          <Box pb={4} display={{ md: 'none' }}>
+            <Stack as={'nav'} spacing={4}>
+            <NextLink href='/' passHref>
+                    <Link>Home</Link>
+                    </NextLink>
+                    <NextLink href='/about' passHref>
+                        <Link>About Me</Link>
+                    </NextLink>
+                    <NextLink href='/projects' passHref>
+                        <Link>My Projects</Link>
+                    </NextLink>
+                    <NextLink href='/writing' passHref>
+                        <Link>Writing</Link>
+                    </NextLink>
+                    <NextLink href='/contact' passHref>
+                        <Link>Contact Me</Link>
+                    </NextLink>
+            </Stack>
+          </Box>
+        ) : null}
       </Box>
     </>
   );
