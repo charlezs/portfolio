@@ -1,11 +1,11 @@
 import React from 'react';
 import { Heading, Text, Container, SimpleGrid, Box, Flex, Stack, Divider, useColorModeValue, Center, Image, Avatar} from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
-import Labs from '../components/Projects/Labs';
-import Zone from '../components/Projects/Zone';
-import Cheer from '../components/Projects/Cheer';
-import InnerCircle from '../components/Projects/Circle';
-import Folio from '../components/Projects/Portfolio';
+import Labs from '../components/projects/Labs';
+import Zone from '../components/projects/Zone';
+import Cheer from '../components/projects/Cheer';
+import InnerCircle from '../components/projects/Circle';
+import Folio from '../components/projects/Portfolio';
 
 export default function projects() {
     return (
