@@ -2,7 +2,12 @@ import React from 'react';
 import NavBar from './Nav';
 import Footer from './Footer';
 
-function Layout({children}) {
+
+type Child ={
+    children: string;
+}
+
+function Layout({children}: Child) {
     return (
         <>
             <NavBar/>
