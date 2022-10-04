@@ -47,7 +47,7 @@ return (
     rounded={'md'}>
     Welcome to my Site!
   </Text>
-  <Heading>I'm Charles Nyabeze  III</Heading>
+  <Heading>I&apos;m Charles Nyabeze  III</Heading>
   <Text color={'gray.500'} fontSize={'lg'}>
   Full stack web developer, VC, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills.            </Text>
   <Stack

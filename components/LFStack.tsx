@@ -48,7 +48,7 @@ import {
         ]} 
           >
         
-          I'm Also Well Versed In:
+          I&apos;m Also Well Versed In:
         </chakra.h1>
         <SimpleGrid columns={{ base: 1, md: 3 }} spacing={{ base: 5, lg: 8 }}>
           <StatsCard title={'Backend'} stat={'Express.Js'} />

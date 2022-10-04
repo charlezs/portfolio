@@ -41,7 +41,7 @@ import {
                               textAlign={'center'}
                               color={useColorModeValue('gray.700', 'gray.400')}
                               px={3}>
-                              Let's e-meet sometime! 
+                              Let&apos;s e-meet sometime! 
                           </Text>
       
                             <Link href='https://calendly.com/charles1x/meet-charles?month=2022-09' isExternal>

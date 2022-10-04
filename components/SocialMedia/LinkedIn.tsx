@@ -42,7 +42,7 @@ import {
                               textAlign={'center'}
                               color={useColorModeValue('gray.700', 'gray.400')}
                               px={3}>
-                              Let's network and connect :)
+                              Let&apos;s network and connect :)
                           </Text>
                             <Link href='https://www.linkedin.com/in/charles-nyabeze/' isExternal>
                               <Button

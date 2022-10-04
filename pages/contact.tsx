@@ -22,10 +22,10 @@ export default function ThreeTier() {
     <Box py={12} mb={4}>
       <VStack spacing={2} textAlign="center">
         <Heading as="h1" fontSize="4xl">
-          Let's Talk Soon!
+          Let&apos;s Talk Soon!
         </Heading>
         <Text fontSize="lg" color={'gray.500'}>
-          I love meeting and connecting with new people, don't be afraid to reach out!
+          I love meeting and connecting with new people, don&apos;t be afraid to reach out!
         </Text>
       </VStack>
       <Stack
