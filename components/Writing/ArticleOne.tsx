@@ -1,7 +1,7 @@
-import { Heading, Text, Link, Button, Box, Stack, useColorModeValue, Image, HStack} from '@chakra-ui/react';
+import { Heading, Text, Link, Box, Stack, useColorModeValue} from '@chakra-ui/react';
 
 
-export default function artOne() {  
+export default function ArtOne() {  
     return (
         <Box
         as="article"
