@@ -1,7 +1,7 @@
 import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure} from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
-export default function AL() {
+export default function Zone() {
   const { getDisclosureProps, getButtonProps } = useDisclosure()
   const buttonProps = getButtonProps()
   const disclosureProps = getDisclosureProps()

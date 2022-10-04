@@ -6,7 +6,7 @@ import Zone from '../components/Projects/Zone';
 import Cheer from '../components/Projects/Cheer';
 import InnerCircle from '../components/Projects/Circle';
 import Folio from '../components/Projects/Portfolio';
-``
+
 export default function projects() {
     return (
       <Container maxW={'5xl'} py={12} centerContent>
