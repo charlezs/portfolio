@@ -64,10 +64,6 @@ _Here is where you setup your app._
    ```
    npm install
    ```
-4. Run    
-```npm run dev```
-
-   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
