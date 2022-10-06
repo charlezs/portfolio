@@ -24,10 +24,11 @@
 
 
 
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img width="1440" alt="Screen Shot 2022-10-06 at 4 51 55 AM" src="https://user-images.githubusercontent.com/90402466/194270515-14cef695-e49d-43fc-99db-5067a52cfbfe.png">
+<img width="1440" alt="Screen Shot 2022-10-06 at 5 32 03 AM" src="https://user-images.githubusercontent.com/90402466/194278681-44a2c1fd-828f-4ad1-ab19-50abf57de428.png">
 
 
 [My Portfolio](https://cheers-to-you-xnlr.vercel.app/login?redirectTo=%2Fhome) (see it live) here you can see my portfolio as a beautiful web app. Made by the one and only, me.
