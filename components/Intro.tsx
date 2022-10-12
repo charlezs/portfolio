@@ -62,7 +62,7 @@ return (
         <Icon as={BsFillBrightnessAltHighFill} color={'white'} w={5} h={5} />
       }
       iconBg={useColorModeValue('purple.300', 'purple.500')}
-      text={'Founder of Agora (acquired by [REDACTED])'}
+      text={'Founder of Agora acquired by Talent Protocol'}
     />
     <Feature
       icon={<Icon as={BsFillPlusCircleFill} color={'white'} w={5} h={5} />}
