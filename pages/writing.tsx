@@ -17,7 +17,7 @@ import HereW from '../components/Writing/Here';
 import Risky from '../components/Writing/Risky';
 import Bear from '../components/Threads/Bear';
 import Mastery from '../components/Threads/Mastery';
-
+import GBA from '../components/Writing/Agora';
 export default function writing() {
     return (
       <Container maxW={'5xl'} py={12} centerContent>
@@ -30,7 +30,7 @@ export default function writing() {
                 <Heading size='xl'>My Writing</Heading>
             </Flex>   
             <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
-                    I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
+              Here is a collection of the best pieces of writing I've created. Be it articles or threads!
             </Text>
           </Box>
           <Divider />
@@ -38,6 +38,7 @@ export default function writing() {
           <Heading mb={'5'}> Articles 📕</Heading>
           
           <ArtOne />
+          <GBA />
           <Risky />
           <HereW />
         </Box>

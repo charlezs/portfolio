@@ -30,7 +30,7 @@ export default function CarlCard() {
             size='2xl'
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://www.agoralabs.xyz/' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://carleton.ca/' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             bgGradient='linear(to-l, #FBF2FF, #E30004)'
@@ -57,8 +57,7 @@ export default function CarlCard() {
             </Text>
 
             <Text color={'gray.500'} pt={3} fontSize={20}>
-             A platform where creators can unlock their potential of their fanbase with content gating tools built for web3. Powered by social tokens and NFTs.
-            </Text>
+            Carleton University is an English-language public research university in Ontario, Canada. </Text>
               <Box pt={3}>
               <Button {...buttonProps}
                   width='100%'
@@ -79,9 +78,7 @@ export default function CarlCard() {
                 </Text>
               </Button>
               <Text {...disclosureProps} mt={4}>
-              I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
-
-              As full-time mobile developer , I am lucky enough to receive a MacBook from my company, hence my journey continue with React Native, cross-platform mobile framework (Android & iOS). My passion in mobile development never ended and I am ready to take on new challenges! 🔥                                  <br />
+              At Carleton I learnt full-stack web development with the following technologies: HTML 5, CSS3, JavaScript, JQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL, Command Line, GitLabs, Git/GitHub version control, RESTful APIs, JEST, full-stack architecture, MVC architecture, MERN stack, and more.
               </Text>
               </Box>
 

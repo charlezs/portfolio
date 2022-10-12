@@ -31,7 +31,7 @@ import {
                           <Avatar
                               size={'xl'}
                               src={
-                              'https://cdn.discordapp.com/attachments/985521628500877322/1025255030330249246/unknown.png'
+                              'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/144px-LinkedIn_icon_circle.svg.png?20210301220643'
                               }
                               mb={4}
                           />

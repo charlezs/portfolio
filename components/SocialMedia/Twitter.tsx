@@ -31,7 +31,7 @@ export default function Twitter() {
                         <Avatar
                             size={'xl'}
                             src={
-                            'https://cdn.discordapp.com/attachments/985521628500877322/1025255226384601199/unknown.png'
+                            'https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg.twimg.1920.jpg'
                             }
                             mb={4}
                             pos={'relative'}

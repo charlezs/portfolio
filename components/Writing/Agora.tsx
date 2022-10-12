@@ -1,14 +1,14 @@
-import { Heading, Text, Link, Box, Stack, useColorModeValue} from '@chakra-ui/react';
+import { Heading, Text, Link, Button, Box, Stack, useColorModeValue, Image} from '@chakra-ui/react';
 
 
-export default function ArticleOne() {  
+export default function GBA() {  
     return (
         <Box
         as="article"
         w="100%"
         p={4}
         mb={12}
-        borderColor={useColorModeValue('black', 'white')}
+        borderColor={useColorModeValue("black","white")}
         borderRadius={5}
         borderWidth="1px"
         transition=".5s"
@@ -16,35 +16,37 @@ export default function ArticleOne() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "green.200",
+            borderColor: "purple",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://medium.com/@char1es/trading-nfts-feat-parsec-fdb354d2043d' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://medium.com/@char1es/goodbye-agora-hello-world-dfffea813f36' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             mb={'3'}
-            bgGradient='linear(to-l, #FBF2FF, green.300)'
+            bgGradient='linear(to-l, #FBF2FF, purple)'
             bgClip='text'
             >
-              Trading NFTs feat. PARSEC
-              </Heading>
+Goodbye Agora, Hello World.
+           </Heading>
             </Link>
             <Text
             textTransform={'uppercase'}
-            color={useColorModeValue('black', 'white')}
+            color={useColorModeValue('black','white')}
             fontWeight={200}
             fontSize={'xs'}
-            bg={useColorModeValue('green.50', 'green.900')}
+            bg={useColorModeValue('purple.50', 'purple.900')}
             p={1}
             alignSelf={'flex-start'}
             rounded={'md'}>
-              Trading Insights
+              Startup
             </Text>
-            <Text color={useColorModeValue('black', 'white')} pt={3} fontSize={20}>
-            Should I buy? Do I sell? I feel like holding but should I? What should I do!?            
-            </Text>
+
+            <Text color={useColorModeValue('black','white')} pt={3} fontSize={20}>
+            Agora Labs, my company, has been acquired by Talent Protocol (a $50M company) So, how did we make this happen, and what’s next?
+
+</Text>
           </Stack>
         </Stack>                  
       </Box>      

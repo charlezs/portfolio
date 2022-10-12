@@ -6,6 +6,7 @@ import Zone from '../components/Projects/Zone';
 import Cheer from '../components/Projects/Cheer';
 import InnerCircle from '../components/Projects/Circle';
 import Folio from '../components/Projects/Portfolio';
+import Coins from '../components/Projects/Coins';
 
 export default function Projects() {
     return (
@@ -19,7 +20,7 @@ export default function Projects() {
                 <Heading size='xl'>My Projects</Heading>
                 </Flex>   
                 <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
-                    I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
+                  Here are my favorite projects I've built so far! Feel free to check them out on my Github aswell.
                     </Text>
                   </Box>
                   <Divider />
@@ -27,6 +28,7 @@ export default function Projects() {
                     <Labs />
                     <Cheer />
                     <Folio />
+                    <Coins />
                     <InnerCircle />
                     <Zone />
                   </SimpleGrid>

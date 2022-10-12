@@ -30,7 +30,7 @@ export default function VtCard() {
             size='2xl'
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://www.agoralabs.xyz/' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://www.fellowship.rippleventures.com/fellowship-program' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             
@@ -58,7 +58,7 @@ export default function VtCard() {
             </Text>
 
             <Text color={'gray.500'} pt={3} fontSize={20}>
-             A platform where creators can unlock their potential of their fanbase with content gating tools built for web3. Powered by social tokens and NFTs.
+            A remote program that connects students all across North America with a common interest of becoming better equipped as founders, VC’s, and employees at startups. It builds the skillset, knowledge, and network that otherwise are rare to acquire as a student.
             </Text>
               <Box pt={3}>
               <Button {...buttonProps}
@@ -80,9 +80,7 @@ export default function VtCard() {
                 </Text>
               </Button>
               <Text {...disclosureProps} mt={4}>
-              I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
-
-              As full-time mobile developer , I am lucky enough to receive a MacBook from my company, hence my journey continue with React Native, cross-platform mobile framework (Android & iOS). My passion in mobile development never ended and I am ready to take on new challenges! 🔥                                  <br />
+              In my time as a Venture Fellow I was coached and taught the intricacies of startup building and venture capital. I was also taught how to be better equipped as an aspiring VC, Founder, and employee at future tech startups.
               </Text>
               </Box>
 

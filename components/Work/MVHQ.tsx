@@ -2,7 +2,7 @@ import { Heading, Text, Link, Button, Box, Stack, useDisclosure, Avatar, useColo
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
 
-export default function BpCard() {
+export default function MVCard() {
     const { getDisclosureProps, getButtonProps } = useDisclosure()
     const buttonProps = getButtonProps()
     const disclosureProps = getDisclosureProps()
@@ -21,36 +21,36 @@ export default function BpCard() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "blue",
+            borderColor: "black.100",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
           <Avatar
-            src={'https://media-exp1.licdn.com/dms/image/C4D0BAQFUStX3pSR7-Q/company-logo_100_100/0/1630506759883?e=1672876800&v=beta&t=5dYhZOuiEW3p1THlhJvujZY0Ul5e4iKgtsDHO5Xesf8'}
+            src={'https://pbs.twimg.com/profile_images/1461903136780480514/JkanyKfn_400x400.jpg'}
             size='2xl'
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://www.blockperks.app/' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://www.mvhq.io/' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             
-            bgGradient='linear(to-l, #FBF2FF, #0031FF)'
+            bgGradient='linear(to-l, blue, purple.400)'
             bgClip='text'
             >
-              Blockperks
+              MetaverseHQ
               </Heading>
             </Link>
             <Text
               as='em'               
               fontSize='lg'>
-              Community Lead
+              Content Writer
             </Text>
             <Text
             textTransform={'uppercase'}
-            color={'blue.400'}
+            color={'white'}
             fontWeight={200}
             fontSize={'xs'}
-            bg={useColorModeValue('blue.50', 'blue.900')}
+            bg={useColorModeValue('blue.200', 'purple.400')}
             p={1}
             alignSelf={'flex-start'}
             rounded={'md'}>
@@ -58,7 +58,8 @@ export default function BpCard() {
             </Text>
 
             <Text color={'gray.500'} pt={3} fontSize={20}>
-            Web3 social trading app for NFT’s on Polygon, Near and Ethereum. </Text>
+            The IVY League of Web3 housing the most prolific NFT Investors, Builders, and Creators in the Web3 space.            
+            </Text>
               <Box pt={3}>
               <Button {...buttonProps}
                   width='100%'
@@ -66,20 +67,20 @@ export default function BpCard() {
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
-                  bgGradient='linear(to-r, #88D1F1, #0031FF)'
+                  bgGradient='linear(to-r, blue.200, purple.400)'
                   _hover={{
-                    bgGradient:'linear(to-r, #FBF2FF, #0031FF)',
+                    bgGradient:'linear(to-r, purple.400, blue.200)',
                   }}
                   _expanded={{
-                    bgGradient:'linear(to-r, #FBF2FF, #0031FF)',
+                    bgGradient:'linear(to-r, purple.400, blue.200)',
                   }}
               >
                 <Text color='black'>
-                More About It<ChevronDownIcon />
+                More About My Role<ChevronDownIcon />
                 </Text>
               </Button>
               <Text {...disclosureProps} mt={4}>
-                At Block Perks I had the Community Management Role. Here I helped engage and interact with the community through talking, brainstorming, interviews and other methods. I also helped design mockups and posts.
+                During my time at MVHQ I helped create curated content for members of the group, this content took the form of informational blogs on hot topics in the Web3 space.
               </Text>
               </Box>
 

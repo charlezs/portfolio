@@ -80,9 +80,7 @@ export default function AgCard() {
                 </Text>
               </Button>
               <Text {...disclosureProps} mt={4}>
-              I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
-
-              As full-time mobile developer , I am lucky enough to receive a MacBook from my company, hence my journey continue with React Native, cross-platform mobile framework (Android & iOS). My passion in mobile development never ended and I am ready to take on new challenges! 🔥                                  <br />
+                At AgoraLabs I took the CMO position but as a founder I had many roles. These roles all included activities such as: writing, digital marketing, user acquisition, talking to communities, networking with influencers, making growth strategies, design, and leading teams.
               </Text>
               </Box>
 

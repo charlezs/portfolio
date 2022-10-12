@@ -26,11 +26,11 @@ export default function FnCard() {
     >        
         <Stack direction={'row'} align={'center'}>
           <Avatar
-            src={'https://cdn.discordapp.com/attachments/985521628500877322/1025567731958960239/Untitled_design_1.png'}
+            src={'https://futurenorth.ca/wp-content/uploads/2022/06/FutureNorth-Header-EN-Logo.png'}
             size='2xl'
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://www.agoralabs.xyz/' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://futurenorth.ca/' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             
@@ -58,7 +58,7 @@ export default function FnCard() {
             </Text>
 
             <Text color={'gray.500'} pt={3} fontSize={20}>
-             A platform where creators can unlock their potential of their fanbase with content gating tools built for web3. Powered by social tokens and NFTs.
+             A 5-year initiative dedicated to improving available resources and opportunities for youth and young adults.
             </Text>
               <Box pt={3}>
               <Button {...buttonProps}
@@ -80,9 +80,7 @@ export default function FnCard() {
                 </Text>
               </Button>
               <Text {...disclosureProps} mt={4}>
-              I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
-
-              As full-time mobile developer , I am lucky enough to receive a MacBook from my company, hence my journey continue with React Native, cross-platform mobile framework (Android & iOS). My passion in mobile development never ended and I am ready to take on new challenges! 🔥                                  <br />
+                At Future North I had the role of Social Media Manager. Here I helped make social media calanders for posting, creating engaging video content, writing helpful content to help youth learn high-value topics, and also, as previously stated, I engaged in Business Admin here through going to meetings and helping with organizing company structure/data.
               </Text>
               </Box>
 

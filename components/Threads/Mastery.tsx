@@ -21,7 +21,7 @@ export default function Mastery() {
     >        
         <Stack direction={'row'} align={'center'}>
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://www.agoralabs.xyz/' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://twitter.com/learn_charles/status/1572222057534099456?s=20&t=n4Ngz6rlQkINIE2ygf0s8Q' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             mb={'3'}

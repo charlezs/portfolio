@@ -21,7 +21,7 @@ export default function HereW() {
     >        
         <Stack direction={'row'} align={'center'}>
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://www.agoralabs.xyz/' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://medium.com/@char1es/risky-business-losses-and-trading-nfts-f4ee1b5d7951' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             mb={'3'}

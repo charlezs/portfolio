@@ -21,7 +21,7 @@ export default function Bear() {
     >        
         <Stack direction={'row'} align={'center'}>
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://www.agoralabs.xyz/' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://twitter.com/learn_charles/status/1574039784355295233?s=20&t=n4Ngz6rlQkINIE2ygf0s8Q' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             mb={'3'}

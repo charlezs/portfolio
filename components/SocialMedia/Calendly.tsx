@@ -30,7 +30,7 @@ import {
                           <Avatar
                               size={'xl'}
                               src={
-                              'https://cdn.discordapp.com/attachments/985521628500877322/1025254585780146197/unknown.png'
+                                  'https://uspto.report/TM/90458106/mark.png'
                               }
                               mb={4}
                           />

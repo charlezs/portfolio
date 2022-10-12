@@ -4,6 +4,7 @@ import AgCard from '../components/Work/AgoraCard';
 import VtCard from '../components/Work/VentureCard';
 import BpCard from '../components/Work/BlockCard';
 import FnCard from '../components/Work/FutureCard';
+import MVCard from '../components/Work/MVHQ';
 import CarlCard from '../components/Education/CarlCard';
 import { StarIcon } from '@chakra-ui/icons';
 import Head from 'next/head';
@@ -29,10 +30,8 @@ export default function AgoraCard() {
                 </Flex>  
                 
                   <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
-                  I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
+                  Full stack web developer, VC, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills. Personal growth is a huge hobbie of mine, that being said, I take every oppertunity I get to learn/do something new. Currently I am tackling Web3 Development.
                   </Text>
-                  <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
-                  As full-time mobile developer , I am lucky enough to receive a MacBook from my company, hence my journey continue with React Native, cross-platform mobile framework (Android & iOS). My passion in mobile development never ended and I am ready to take on new challenges! 🔥                  </Text>
                 </Box>
 
                 <Box>
@@ -40,6 +39,7 @@ export default function AgoraCard() {
                   {/* This is where your cards will go */}
                     <AgCard/>
                     <FnCard/>
+                    <MVCard />
                     <VtCard/>
                     <BpCard/>
                 </Box>

@@ -18,7 +18,6 @@ export default function Zone() {
   p={6}
   overflow={'hidden'}>
   <Box
-    h={'300px'}
     bg={'gray.100'}
     mt={-6}
     mx={-6}
@@ -26,7 +25,7 @@ export default function Zone() {
     pos={'relative'}>
     <Image
       src={
-        'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+        'https://cdn.discordapp.com/attachments/985521628500877322/1029649049663582248/Untitled_design_7.png'
       }
       h="100%"
       w="100%"
@@ -75,8 +74,7 @@ export default function Zone() {
                 </Text>
               </Button>
               <Text {...disclosureProps} mt={4}>
-              I am a mobile developer with 2 years ++ working experience. My developer journey started with Android (Java) during my internship. After graduation, this journey continued with Kotlin, official language for Android development. 👔
-              </Text>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec velit vitae erat sagittis faucibus et nec orci. Donec hendrerit feugiat leo, vitae vehicula est facilisis at. Pellentesque at turpis eget est pulvinar commodo. Morbi magna odio, interdum in lectus scelerisque, lacinia vestibulum tellus. Mauris tincidunt varius orci vel euismod. Donec vehicula leo diam, sit amet pharetra dolor convallis et. Nullam nulla dolor, varius nec velit id, ultrices sodales nisl. Ut in pharetra turpis. Vestibulum elementum dolor imperdiet, blandit ante quis, suscipit neque. Aenean vestibulum ligula metus, id ultrices lacus molestie vel. Aliquam ac turpis accumsan, gravida erat sed, laoreet felis. Etiam eget molestie mi, vel bibendum dolor.</Text>
               </Box>
 </Box>
 </Center>

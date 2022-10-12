@@ -1,7 +1,7 @@
 import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure} from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
-export default function AL() {
+export default function Coins() {
   const { getDisclosureProps, getButtonProps } = useDisclosure()
   const buttonProps = getButtonProps()
   const disclosureProps = getDisclosureProps()
@@ -18,6 +18,7 @@ export default function AL() {
   p={6}
   overflow={'hidden'}>
   <Box
+    h={'300px'}
     bg={'gray.100'}
     mt={-6}
     mx={-6}
@@ -25,7 +26,7 @@ export default function AL() {
     pos={'relative'}>
     <Image
       src={
-        'https://cdn.discordapp.com/attachments/985521628500877322/1029649049332228146/Untitled_design_5.png'
+        'https://www.elegantthemes.com/blog/wp-content/uploads/2019/10/loading-screen-featured-image.jpg'
       }
       h="100%"
       w="100%"
@@ -37,20 +38,20 @@ export default function AL() {
       color={useColorModeValue('gray.700', 'white')}
       fontSize={'2xl'}
       fontFamily={'body'}>
-      My Site
+      ETH Portfolio Tracker
     </Heading>
     <Text
             textTransform={'uppercase'}
             justifyContent={'right'}
             alignItems={'end'}
             alignSelf={'flex-end'}
-            color={useColorModeValue('white', 'black')}
+            color={'blue.300'}
             fontWeight={600}
             fontSize={'sm'}
-            bg={useColorModeValue('black', 'white')}
+            bg={useColorModeValue('blue.100', 'blue.700')}
             p={2}
             rounded={'md'}>
-            Portfolio
+            Web3
             </Text>
     </SimpleGrid>
   </Stack>
@@ -61,12 +62,12 @@ export default function AL() {
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
-                  bg={'white'}
+                  bg={'blue.600'}
                   _hover={{
-                    bgGradient:'linear(to-r, black, white)',
+                    bgGradient:'linear(to-r, white, blue.400)',
                   }}
                   _expanded={{
-                    bgGradient:'linear(to-r, black, white)',
+                    bgGradient:'linear(to-r, white, blue.600)',
                   }}
               >
                 <Text color='black'>
