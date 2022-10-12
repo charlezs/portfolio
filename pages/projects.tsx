@@ -20,7 +20,7 @@ export default function Projects() {
                 <Heading size='xl'>My Projects</Heading>
                 </Flex>   
                 <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
-                  Here are my favorite projects I've built so far! Feel free to check them out on my Github aswell.
+                  Here are my favorite projects I&aposve built so far! Feel free to check them out on my Github aswell.
                     </Text>
                   </Box>
                   <Divider />
