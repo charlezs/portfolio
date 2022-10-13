@@ -46,7 +46,7 @@ export default function BasicStatistics() {
         bgGradient={[
           'linear(to-t, whiteAlpha.700, blue.400)',
         ]}        >
-        My Favorite Languages Are:
+        My Weapons of Choice Are:
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard title={'Styling'} stat={'ChakraUI'} />

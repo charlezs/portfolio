@@ -61,7 +61,7 @@ export default function BpCard() {
             Web3 social trading app for NFT’s on Polygon, Near and Ethereum. </Text>
               <Box pt={3}>
               <Button {...buttonProps}
-                  width='100%'
+                  minW='100%'
                   h={10}
                   transition='all 0.2s'
                   borderRadius='md'

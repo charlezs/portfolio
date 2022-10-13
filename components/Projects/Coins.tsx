@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure} from '@chakra-ui/react';
+import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure, Link} from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
 export default function Coins() {
@@ -18,7 +18,6 @@ export default function Coins() {
   p={6}
   overflow={'hidden'}>
   <Box
-    h={'300px'}
     bg={'gray.100'}
     mt={-6}
     mx={-6}
@@ -26,7 +25,7 @@ export default function Coins() {
     pos={'relative'}>
     <Image
       src={
-        'https://www.elegantthemes.com/blog/wp-content/uploads/2019/10/loading-screen-featured-image.jpg'
+        'https://media.discordapp.net/attachments/985521628500877322/1029978120918409247/Untitled_design_9.png'
       }
       h="100%"
       w="100%"
@@ -38,17 +37,17 @@ export default function Coins() {
       color={useColorModeValue('gray.700', 'white')}
       fontSize={'2xl'}
       fontFamily={'body'}>
-      ETH Portfolio Tracker
+      <Link href='https://web-three-dapp.vercel.app/' isExternal>ETH Portfolio Tracker</Link>
     </Heading>
     <Text
             textTransform={'uppercase'}
             justifyContent={'right'}
             alignItems={'end'}
             alignSelf={'flex-end'}
-            color={'blue.300'}
+            color={'black'}
             fontWeight={600}
             fontSize={'sm'}
-            bg={useColorModeValue('blue.100', 'blue.700')}
+            bg={useColorModeValue('orange.100', 'orange.500')}
             p={2}
             rounded={'md'}>
             Web3
@@ -62,22 +61,24 @@ export default function Coins() {
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
-                  bg={'blue.600'}
+                  bg={'orange.100'}
                   _hover={{
-                    bgGradient:'linear(to-r, white, blue.400)',
+                    bgGradient:'linear(to-r, white, orange.400)',
                   }}
                   _expanded={{
-                    bgGradient:'linear(to-r, white, blue.600)',
+                    bgGradient:'linear(to-r, white, orange.400)',
                   }}
               >
                 <Text color='black'>
                 What Is It?<ChevronDownIcon />
                 </Text>
               </Button>
-              <Text {...disclosureProps} mt={4}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec velit vitae erat sagittis faucibus et nec orci. Donec hendrerit feugiat leo, vitae vehicula est facilisis at. Pellentesque at turpis eget est pulvinar commodo. Morbi magna odio, interdum in lectus scelerisque, lacinia vestibulum tellus. Mauris tincidunt varius orci vel euismod. Donec vehicula leo diam, sit amet pharetra dolor convallis et. Nullam nulla dolor, varius nec velit id, ultrices sodales nisl. Ut in pharetra turpis. Vestibulum elementum dolor imperdiet, blandit ante quis, suscipit neque. Aenean vestibulum ligula metus, id ultrices lacus molestie vel. Aliquam ac turpis accumsan, gravida erat sed, laoreet felis. Etiam eget molestie mi, vel bibendum dolor.
-
-</Text>
+              <Text {...disclosureProps} mt={4} fontSize={14}>
+              ⚙️ Built with: TypeScript, React, Vercel, Ethers.js, 
+              <br></br>
+              <br></br>
+              🌐 A website that show's you all the stats of an eth wallet, from amount of eth, to tokens, to history.
+              </Text>
               </Box>
 </Box>
 </Center>

@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure} from '@chakra-ui/react';
+import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure, Link} from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
 export default function AL() {
@@ -38,7 +38,7 @@ export default function AL() {
       color={useColorModeValue('gray.700', 'white')}
       fontSize={'2xl'}
       fontFamily={'body'}>
-      Cheers!
+      <Link href='https://cheers-to-you-xnlr.vercel.app/login?redirectTo=%2F' isExternal>Cheers!</Link>
     </Heading>
     <Text
             textTransform={'uppercase'}
@@ -74,10 +74,12 @@ export default function AL() {
                 What Is It?<ChevronDownIcon />
                 </Text>
               </Button>
-              <Text {...disclosureProps} mt={4}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec velit vitae erat sagittis faucibus et nec orci. Donec hendrerit feugiat leo, vitae vehicula est facilisis at. Pellentesque at turpis eget est pulvinar commodo. Morbi magna odio, interdum in lectus scelerisque, lacinia vestibulum tellus. Mauris tincidunt varius orci vel euismod. Donec vehicula leo diam, sit amet pharetra dolor convallis et. Nullam nulla dolor, varius nec velit id, ultrices sodales nisl. Ut in pharetra turpis. Vestibulum elementum dolor imperdiet, blandit ante quis, suscipit neque. Aenean vestibulum ligula metus, id ultrices lacus molestie vel. Aliquam ac turpis accumsan, gravida erat sed, laoreet felis. Etiam eget molestie mi, vel bibendum dolor.
-
-</Text>
+              <Text {...disclosureProps} mt={4} fontSize={14}>
+              ⚙️ Built with: TypeScript, MongoDB, Prisma, Next.js, TailwindCSS, AWS, Vercel
+              <br></br>
+              <br></br>
+              🌐 A platform where teams can communicate and give eachother praise(cheers) while being able to see who has been praised!
+              </Text>
               </Box>
 </Box>
 </Center>

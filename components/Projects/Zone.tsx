@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure} from '@chakra-ui/react';
+import { Heading, Text, Box, Stack, useColorModeValue, Center, Image, Button, SimpleGrid, useDisclosure, Link} from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
 export default function Zone() {
@@ -37,7 +37,7 @@ export default function Zone() {
       color={useColorModeValue('gray.700', 'white')}
       fontSize={'2xl'}
       fontFamily={'body'}>
-      Game Zone
+      <Link href='https://github.com/charlezs/Game-Zone' isExternal>Game Zone</Link>
     </Heading>
     <Text
             textTransform={'uppercase'}
@@ -47,7 +47,7 @@ export default function Zone() {
             color={'grey.200'}
             fontWeight={600}
             fontSize={'sm'}
-            bg={useColorModeValue('black.50', 'black')}
+            bg={useColorModeValue('grey', 'grey')}
             p={2}
             rounded={'md'}>
             Reddit Clone
@@ -73,9 +73,13 @@ export default function Zone() {
                 What Is It?<ChevronDownIcon />
                 </Text>
               </Button>
-              <Text {...disclosureProps} mt={4}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec velit vitae erat sagittis faucibus et nec orci. Donec hendrerit feugiat leo, vitae vehicula est facilisis at. Pellentesque at turpis eget est pulvinar commodo. Morbi magna odio, interdum in lectus scelerisque, lacinia vestibulum tellus. Mauris tincidunt varius orci vel euismod. Donec vehicula leo diam, sit amet pharetra dolor convallis et. Nullam nulla dolor, varius nec velit id, ultrices sodales nisl. Ut in pharetra turpis. Vestibulum elementum dolor imperdiet, blandit ante quis, suscipit neque. Aenean vestibulum ligula metus, id ultrices lacus molestie vel. Aliquam ac turpis accumsan, gravida erat sed, laoreet felis. Etiam eget molestie mi, vel bibendum dolor.</Text>
-              </Box>
+              <Text {...disclosureProps} mt={4} fontSize={14}>
+              ⚙️ Built with: Javascript, Express.js, Heroku, SQL
+              <br></br>
+              <br></br>
+              🌐 A reddit clone for gamers to show off what games they are interested in!
+              </Text>
+            </Box>
 </Box>
 </Center>
 

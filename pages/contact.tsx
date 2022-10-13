@@ -13,13 +13,20 @@ import {
   Center,
   Link,
   Badge,
-  Button,
   SimpleGrid
 } from '@chakra-ui/react';
+import Head from 'next/head';
 
 export default function ThreeTier() {
   return (
     <Box py={12} mb={4}>
+
+      <Head>
+          <title>Contact Me</title>
+          <meta name="description" content="Charles | Application Developer" />
+          <link rel="icon" href="https://media-exp1.licdn.com/dms/image/C5603AQHIu-oeNlFPAA/profile-displayphoto-shrink_800_800/0/1657593782687?e=2147483647&v=beta&t=oxbiWmYuv2Jh3Vxw3JPf4R8l79zOIRSWHS07ZHjOSbc" />
+      </Head>
+        
       <VStack spacing={2} textAlign="center">
         <Heading as="h1" fontSize="4xl">
           Let&apos;s Talk Soon!
