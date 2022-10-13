@@ -77,7 +77,7 @@ export default function Coins() {
               ⚙️ Built with: TypeScript, React, Vercel, Ethers.js, 
               <br></br>
               <br></br>
-              🌐 A website that show's you all the stats of an eth wallet, from amount of eth, to tokens, to history.
+              🌐 A website that show&apos;s you all the stats of an eth wallet, from amount of eth, to tokens, to history.
               </Text>
               </Box>
 </Box>

@@ -77,7 +77,7 @@ export default function AL() {
               ⚙️ Built with: TypeScript, Next.js, Vercel
               <br></br>
               <br></br>
-              🌐 A website that tell's you all you need to know about me!
+              🌐 A website that tell&apos;s you all you need to know about me!
               </Text>
               </Box>
 </Box>
