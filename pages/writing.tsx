@@ -37,7 +37,7 @@ export default function writing() {
                 <Heading size='xl'>My Writing</Heading>
             </Flex>   
             <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
-              Here is a collection of the best pieces of writing I&aposve created. Be it articles or threads!
+              Here is a collection of the best pieces of writing I&apos;ve created. Be it articles or threads!
             </Text>
           </Box>
           <Divider />

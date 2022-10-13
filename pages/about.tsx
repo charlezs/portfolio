@@ -30,7 +30,7 @@ export default function AgoraCard() {
                 </Flex>  
                 
                   <Text color={'gray.500'} fontSize={'lg'} pt={6} pl={3}>
-                  Full stack web developer, VC, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills. Personal growth is a huge hobbie of mine, that being said, I take every oppertunity I get to learn/do something new. Currently I am tackling Web3 Development.
+                  Full stack web developer, VC, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills. Personal growth is a huge hobbie of mine, that being said, I take every opportunity I get to learn/do something new. Currently I am tackling Web3 Development.
                   </Text>
                 </Box>
 
