@@ -79,7 +79,7 @@ export default function ArCard() {
                 </Text>
               </Button>
               <Text {...disclosureProps} mt={4}>
-              At Air.ai I assisted in building end-end features. I rebuilt APIs, optimized code bases, and designed beautiful front ends. I also had the role of re-building all of the software we were dependent on in-house, along with API's and dashboards.
+              At Air.ai I assisted in building end-end features. I rebuilt APIs, optimized code bases, and designed beautiful front ends. I also had the role of re-building all of the software we were dependent on in-house, along with API&apos;s and dashboards.
 Here I coded the frontend and backend using TypeScript, React, Next.js, TailwindCSS, Node.js, Supabase, and Axios.</Text>
               </Box>
 
