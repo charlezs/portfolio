@@ -6,6 +6,7 @@ import BpCard from '../components/Work/BlockCard';
 import FnCard from '../components/Work/FutureCard';
 import MVCard from '../components/Work/MVHQ';
 import CarlCard from '../components/Education/CarlCard';
+import ArCard from '../components/Work/AirCard';
 import { StarIcon } from '@chakra-ui/icons';
 import Head from 'next/head';
 
@@ -38,6 +39,7 @@ export default function AgoraCard() {
                   <Heading mb={5}> My Career</Heading>
                   {/* This is where your cards will go */}
                     <AgCard/>
+                    <ArCard />
                     <FnCard/>
                     <MVCard />
                     <VtCard/>

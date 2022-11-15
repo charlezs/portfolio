@@ -54,7 +54,7 @@ export default function FnCard() {
             p={1}
             alignSelf={'flex-start'}
             rounded={'md'}>
-              2021 - 2202
+              2021 - 2022
             </Text>
 
             <Text color={'gray.500'} pt={3} fontSize={20}>

@@ -2,7 +2,7 @@ import { Heading, Text, Link, Button, Box, Stack, useDisclosure, Avatar, useColo
 import { ChevronDownIcon } from '@chakra-ui/icons';
 
 
-export default function AgCard() {
+export default function ArCard() {
     const { getDisclosureProps, getButtonProps } = useDisclosure()
     const buttonProps = getButtonProps()
     const disclosureProps = getDisclosureProps()
@@ -21,45 +21,44 @@ export default function AgCard() {
         display="flex"
         role="group"
         _hover={{
-            borderColor: "purple.200",
+            borderColor: "blue.200",
         }}
     >        
         <Stack direction={'row'} align={'center'}>
           <Avatar
-            src={'https://pbs.twimg.com/profile_images/1546662871160979458/DIZpFR5S_400x400.jpg'}
+            src={'https://air.ai/images/AirSignature.svg'}
             size='2xl'
           />
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://www.agoralabs.xyz/' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://air.ai/' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             
-            bgGradient='linear(to-l, #FBF2FF, #DC86FA)'
+            bgGradient='linear(to-l, #FBF2FF, blue.600)'
             bgClip='text'
             >
-              Agora Labs
+              Air.ai
               </Heading>
             </Link>
             <Text
               as='em'               
               fontSize='lg'>
-              Founder / CMO
+              Software Engineer
             </Text>
             <Text
             textTransform={'uppercase'}
-            color={'blue.400'}
+            color={'blue.600'}
             fontWeight={200}
             fontSize={'xs'}
-            bg={useColorModeValue('blue.50', 'blue.900')}
+            bg={useColorModeValue('blue.200', 'blue.900')}
             p={1}
             alignSelf={'flex-start'}
             rounded={'md'}>
-              2021 - 2022
+              2022 - 2023
             </Text>
 
             <Text color={'gray.500'} pt={3} fontSize={20}>
-             A platform where creators can unlock their potential of their fanbase with content gating tools built for web3. Powered by social tokens and NFTs.
-            </Text>
+            AI-powered suite initially focused on helping businesses scale with speed and stability that powers $100M+ in stealth.            </Text>
               <Box pt={3}>
               <Button {...buttonProps}
                   width='100%'
@@ -67,12 +66,12 @@ export default function AgCard() {
                   transition='all 0.2s'
                   borderRadius='md'
                   borderWidth='1px'
-                  bgGradient='linear(to-l, #C030ED, #DC86FA)'
+                  bgGradient='linear(to-r, #FBF2FF, blue)'
                   _hover={{
-                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                    bgGradient:'linear(to-r, #FBF2FF, blue)',
                   }}
                   _expanded={{
-                    bgGradient:'linear(to-r, #FBF2FF, #DC86FA)',
+                    bgGradient:'linear(to-r, #FBF2FF, blue)',
                   }}
               >
                 <Text color='black'>
@@ -80,8 +79,8 @@ export default function AgCard() {
                 </Text>
               </Button>
               <Text {...disclosureProps} mt={4}>
-                At AgoraLabs I took the CMO position but as a founder I had many roles. These roles all included activities such as: writing, digital marketing, user acquisition, talking to communities, networking with influencers, making growth strategies, design, and leading teams.
-              </Text>
+              At Air.ai I assisted in building end-end features. I rebuilt APIs, optimized code bases, and designed beautiful front ends. I also had the role of re-building all of the software we were dependent on in-house, along with API's and dashboards.
+Here I coded the frontend and backend using TypeScript, React, Next.js, TailwindCSS, Node.js, Supabase, and Axios.</Text>
               </Box>
 
           </Stack>
