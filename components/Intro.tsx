@@ -48,7 +48,7 @@ return (
     Welcome to my Site!
   </Text>
   <Heading>I&apos;m Charles Nyabeze  III</Heading>
-  <Text color={'#3B3931'} fontSize={'lg'}>
+  <Text color={'#000000'} fontSize={'lg'}>
   Front-end web developer, designer of beautiful things, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills.</Text>
   <Stack
     spacing={6}
