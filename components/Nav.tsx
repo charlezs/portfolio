@@ -13,7 +13,7 @@ import {
   useColorMode,
 } from '@chakra-ui/react';
 import NextLink from "next/link"
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {BsFillHouseDoorFill} from 'react-icons/bs'
 
 export default function Simple() {
@@ -55,9 +55,9 @@ export default function Simple() {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-          {/* <Button onClick={toggleColorMode}>
+          <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button> */}
+              </Button>
           </Flex>
         </Flex>
 
