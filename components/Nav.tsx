@@ -55,9 +55,9 @@ export default function Simple() {
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-          <Button onClick={toggleColorMode}>
+          <Button onClick={toggleColorMode} bg={useColorModeValue('black', 'black')}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button>
+          </Button>
           </Flex>
         </Flex>
 

@@ -48,7 +48,7 @@ return (
     Welcome to my Site!
   </Text>
   <Heading>I&apos;m Charles Nyabeze  III</Heading>
-  <Text color={'#000000'} fontSize={'lg'}>
+  <Text color={useColorModeValue('black', 'white')} fontSize={'lg'}>
   Front-end web developer, designer of beautiful things, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills.</Text>
   <Stack
     spacing={6}
@@ -82,9 +82,8 @@ return (
   <Image
     rounded={'md'}
     alt={'feature image'}
-    src={
-      'https://cdn.discordapp.com/attachments/985521628500877322/1024485843689279538/305DC2AD-FB2B-4E92-8984-4E1B8D23E39F_2.JPG'
-    }
+    src=
+    {useColorModeValue('https://cdn.discordapp.com/attachments/985521628500877322/1024485843689279538/305DC2AD-FB2B-4E92-8984-4E1B8D23E39F_2.JPG', 'https://cdn.discordapp.com/attachments/985520885538643968/1046604415282454599/darkimg.jpg')}
     objectFit={'cover'}
   />
 
