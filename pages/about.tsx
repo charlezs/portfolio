@@ -17,7 +17,7 @@ export default function AgoraCard() {
 
                 <Head>
                 <title>About Me</title>
-                <meta name="description" content="Charles | Application Developer" />
+                <meta name="description" content="Charles | Front-end Dev" />
                 <link rel="icon" href="https://media-exp1.licdn.com/dms/image/C5603AQHIu-oeNlFPAA/profile-displayphoto-shrink_800_800/0/1657593782687?e=2147483647&v=beta&t=oxbiWmYuv2Jh3Vxw3JPf4R8l79zOIRSWHS07ZHjOSbc" />
                 </Head>  
 
