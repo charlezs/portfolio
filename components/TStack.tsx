@@ -50,11 +50,11 @@ export default function BasicStatistics() {
       </Heading>
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={{ base: 5, lg: 8 }}>
         <StatsCard title={'Styling'} stat={'ChakraUI'} />
-        <StatsCard title={'ORM'} stat={'Prisma'} />
+        <StatsCard title={'Hosting'} stat={'Vercel'} />
         <StatsCard title={'Database'} stat={'MongoDB'} />
         <StatsCard title={'Weapon of Choice'} stat={'TypeScript'} />
         <StatsCard title={'Framework'} stat={'Next.Js'} />
-        <StatsCard title={'Functionality'} stat={'JQuery'} />
+        <StatsCard title={'Management'} stat={'GraphQL'} />
         <StatsCard title={'UI'} stat={'React'} />
         <StatsCard title={'Management'} stat={'MySQL'} />
       </SimpleGrid>
