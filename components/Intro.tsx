@@ -38,18 +38,18 @@ return (
 <Stack spacing={4}>
   <Text
     textTransform={'uppercase'}
-    color={'blue.400'}
+    color={'white'}
     fontWeight={600}
     fontSize={'sm'}
-    bg={useColorModeValue('blue.50', 'blue.900')}
+    bg={'#EB3C27'}
     p={2}
     alignSelf={'flex-start'}
     rounded={'md'}>
     Welcome to my Site!
   </Text>
   <Heading>I&apos;m Charles Nyabeze  III</Heading>
-  <Text color={'gray.500'} fontSize={'lg'}>
-  Full stack web developer, VC, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills.            </Text>
+  <Text color={'#3B3931'} fontSize={'lg'}>
+  Front-end web developer, designer of beautiful things, NFT Trader, Founder, Writer, Content Creator, and serial learner of high impact skills.</Text>
   <Stack
     spacing={6}
     divider={
@@ -61,19 +61,19 @@ return (
       icon={
         <Icon as={BsFillBrightnessAltHighFill} color={'white'} w={5} h={5} />
       }
-      iconBg={useColorModeValue('purple.300', 'purple.500')}
+      iconBg={'#EB3C27'}
       text={'Founder of Agora acquired by Talent Protocol'}
     />
     <Feature
       icon={<Icon as={BsFillPlusCircleFill} color={'white'} w={5} h={5} />}
-      iconBg={useColorModeValue('green.300', 'green.500')}
+      iconBg={'#EB3C27'}
       text={'Made 12,000% returns in crypto'}
     />
     <Feature
       icon={
         <Icon as={BsEye} color={'white'} w={5} h={5} />
       }
-      iconBg={useColorModeValue('blue.300', 'blue.500')}
+      iconBg={'#EB3C27'}
       text={'Founder of Inner Circle'}
     />
   </Stack>

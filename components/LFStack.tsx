@@ -44,7 +44,7 @@ import {
           fontWeight={'bold'}
           bgClip={'text'}
           bgGradient={[
-            'linear(to-t, whiteAlpha.700, blue.400)',
+            'linear(to-b, #EB3C27, #F17566)',
         ]} 
           >
         

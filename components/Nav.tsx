@@ -13,7 +13,6 @@ import {
   useColorMode,
 } from '@chakra-ui/react';
 import NextLink from "next/link"
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import {BsFillHouseDoorFill} from 'react-icons/bs'
 
@@ -23,14 +22,15 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box textColor='white' bg={'black'} px={4} >
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon/>}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
+            color='white'
           />
           <HStack pl={6} spacing={100} alignItems={'center'}>
             <HStack
@@ -38,46 +38,46 @@ export default function Simple() {
               spacing={60}
               display={{ base: 'none', md: 'flex' }}>
                     <NextLink href='/' passHref>
-                    <Link><Icon w={5} h={5} as={BsFillHouseDoorFill} /></Link>
+                    <Link><Icon w={5} h={5} color='white' as={BsFillHouseDoorFill} /></Link>
                     </NextLink>
                     <NextLink href='/about' passHref>
-                        <Link>About Me</Link>
+                        <Link>About</Link>
                     </NextLink>
                     <NextLink href='/projects' passHref>
-                        <Link>My Projects</Link>
+                        <Link>Projects</Link>
                     </NextLink>
                     <NextLink href='/writing' passHref>
                         <Link>Writing</Link>
                     </NextLink>
                     <NextLink href='/contact' passHref>
-                        <Link>Contact Me</Link>
+                        <Link>Contact</Link>
                     </NextLink>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
-          <Button onClick={toggleColorMode}>
+          {/* <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button>
+              </Button> */}
           </Flex>
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ md: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
+          <Box pb={4} display={{ md: 'none' }} color='white'>
+            <Stack as={'nav'} spacing={4} textColor='white'>
             <NextLink href='/' passHref>
                     <Link>Home</Link>
                     </NextLink>
                     <NextLink href='/about' passHref>
-                        <Link>About Me</Link>
+                        <Link>About</Link>
                     </NextLink>
                     <NextLink href='/projects' passHref>
-                        <Link>My Projects</Link>
+                        <Link>Projects</Link>
                     </NextLink>
                     <NextLink href='/writing' passHref>
                         <Link>Writing</Link>
                     </NextLink>
                     <NextLink href='/contact' passHref>
-                        <Link>Contact Me</Link>
+                        <Link>Contact</Link>
                     </NextLink>
             </Stack>
           </Box>
