@@ -21,7 +21,7 @@ export default function HereW() {
     >        
         <Stack direction={'row'} align={'center'}>
           <Stack direction={'column'} spacing={0} fontSize={'sm'} pl={3}>
-          <Link href='https://medium.com/@char1es/risky-business-losses-and-trading-nfts-f4ee1b5d7951' isExternal style={{ textDecoration: 'none' }}>
+          <Link href='https://medium.com/@char1es/here-we-are-but-how-did-we-get-here-5b059e6025eb' isExternal style={{ textDecoration: 'none' }}>
             <Heading 
             fontWeight={600} 
             mb={'3'}
@@ -39,7 +39,7 @@ Here we are but, how did we get here?            </Heading>
             p={1}
             alignSelf={'flex-start'}
             rounded={'md'}>
-              Trading Insights
+              My Life
             </Text>
 
             <Text color={useColorModeValue('black','white')} pt={3} fontSize={20}>
