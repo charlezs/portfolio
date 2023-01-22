@@ -8,6 +8,9 @@ import InnerCircle from '../components/Projects/Circle';
 import Folio from '../components/Projects/Portfolio';
 import Coins from '../components/Projects/Coins';
 import Head from 'next/head';
+import LEE from '../components/Projects/LEE';
+import JG from '../components/Projects/JG';
+import UnHook from '../components/Projects/UnHook';
 export default function Projects() {
     return (
       <Container maxW={'5xl'} py={12} centerContent>
@@ -31,6 +34,9 @@ export default function Projects() {
                   <Divider />
                   <SimpleGrid columns={[1]}>
                     <Labs />
+                    <JG />
+                    <LEE />
+                    <UnHook />
                     <Cheer />
                     <Folio />
                     <Coins />
